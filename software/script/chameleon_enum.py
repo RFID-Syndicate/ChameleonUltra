@@ -497,6 +497,7 @@ class MifareClassicDarksideStatus(enum.IntEnum):
 class AnimationMode(enum.IntEnum):
     FULL = 0
     MINIMAL = 1
+    SYMMETRIC = 3
     NONE = 2
 
     def __str__(self):
@@ -504,6 +505,8 @@ class AnimationMode(enum.IntEnum):
             return "Full animation"
         elif self == AnimationMode.MINIMAL:
             return "Minimal animation"
+        elif self == AnimationMode.SYMMETRIC:
+            return "Symmetric animation"
         elif self == AnimationMode.NONE:
             return "No animation"
 
